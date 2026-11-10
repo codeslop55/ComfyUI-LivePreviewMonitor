@@ -16,3 +16,7 @@ Live previews must be enabled in ComfyUI. Search settings for “preview method�
 The default latent2rgb preview is blurry color blobs. taesd is much more readable, but it needs the TAESD decoder files for your model family in models/vae_approx. Not every newer model has one.
 The node is marked virtual, so it’s never sent to the backend and doesn’t affect caching or execution.
 The JS relies on the frontend’s b_preview_with_metadata event and the addDOMWidget API. A big frontend update could shift those, and if one does, the fix is probably a one-line change.
+
+Installation:
+
+Run `git clone https://github.com/codeslop55/ComfyUI-LivePreviewMonitor/` in your custom_nodes folder to download the project. No dependencies required. Simply restart comfyu and add the Live Preview Monitor Node anywhere. 
